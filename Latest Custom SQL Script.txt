@@ -1,0 +1,3 @@
+ALTER TABLE users
+	DROP COLUMN email
+	ADD COLUMN name VARCHAR
