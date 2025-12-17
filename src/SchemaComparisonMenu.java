@@ -18,7 +18,7 @@ public class SchemaComparisonMenu {
             System.out.println(
                     "1.View Schema Comparison for Predefined Target Schema\n" +
                             "2. View Schema Comparison for Custom Target Schema\n" +
-                            "3.Go Back"
+                            "3.Go Back \n Note: if you enter custom schema press enter twice after entering to proceed"
             );
 
             // Creating SchemaDiff object for predefined schema comparison

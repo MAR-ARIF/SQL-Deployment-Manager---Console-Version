@@ -7,7 +7,7 @@ public class ScriptAnalysisMenu {
         while (true) {
             System.out.println("\nSelect an option: ");
             System.out.println("1.View Script Analysis for Predefined SQL Script\n2. View Script" +
-                    " Comparison for Custom SQL Script\n3.G0 Back");
+                    " Comparison for Custom SQL Script\n3.G0 Back \n Note: if you enter custom schema press enter twice after entering to proceed");
             SqlScriptAnalysis sq = new SqlScriptAnalysis();
             int choice = sc.nextInt();
 
