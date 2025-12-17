@@ -1,5 +1,8 @@
 # SQL Deployment Manager (Console Version)
 
+SID - 2427580
+Team name- Team Quint
+
 ---
 
 ## 📌 Project Overview
@@ -84,7 +87,7 @@ FileHandler.java – File operations (logs & scripts)
 User.java – User data and input handling
 ## 🧱 Main (Current) Schema
 
-```sql
+
 CREATE TABLE users (
     id INT PRIMARY KEY,
     username VARCHAR(50),
@@ -92,7 +95,6 @@ CREATE TABLE users (
     created_at DATETIME,
     is_active BOOLEAN
 );
-```
 
 ---
 
@@ -100,7 +102,7 @@ CREATE TABLE users (
 
 ### 🟢 Sample Target Schema 1 (Added Column)
 
-```sql
+
 CREATE TABLE users (
     id INT PRIMARY KEY,
     username VARCHAR(50),
@@ -109,11 +111,11 @@ CREATE TABLE users (
     is_active BOOLEAN,
     phone VARCHAR(20) -- new column added
 );
-```
+
 
 ### 🟡 Sample Target Schema 2 (Modified Column)
 
-```sql
+
 CREATE TABLE users (
     id INT PRIMARY KEY,
     username VARCHAR(50),
@@ -121,11 +123,11 @@ CREATE TABLE users (
     created_at DATETIME,
     is_active BOOLEAN
 );
-```
+
 
 ### 🔴 Sample Target Schema 3 (Dropped + Added Column)
 
-```sql
+
 CREATE TABLE users (
     id INT PRIMARY KEY,
     username VARCHAR(50),
@@ -134,7 +136,7 @@ CREATE TABLE users (
     is_active BOOLEAN
     -- created_at column removed
 );
-```
+
 
 ---
 
@@ -142,7 +144,7 @@ CREATE TABLE users (
 
 ### SQL Script 1
 
-```sql
+
 ALTER TABLE users
 ADD COLUMN phone VARCHAR(20),
 MODIFY COLUMN email VARCHAR(150);
@@ -150,7 +152,7 @@ MODIFY COLUMN email VARCHAR(150);
 
 ### SQL Script 2
 
-```sql
+
 ALTER TABLE users
 DROP COLUMN created_at,
 ADD COLUMN last_login DATETIME;
@@ -158,21 +160,21 @@ ADD COLUMN last_login DATETIME;
 
 ### SQL Script 3
 
-```sql
+
 ALTER TABLE users
 ADD COLUMN password VARCHAR(255) NOT NULL,
 MODIFY COLUMN id BIGINT;
-```
+
 
 ---
 
 ## ♻ Sample Rollback Script Output
 
-```sql
+
 ALTER TABLE users
 DROP COLUMN phone,
 MODIFY COLUMN email VARCHAR(100);
-```
+
 
 ---
 
@@ -204,6 +206,22 @@ Staging | Custom Script | ✅APPROVED BY DBA JHON | 21/05/2025--15:10:45 | BY Ar
 4. Copy-paste sample schemas or SQL scripts when asked for custom schema or script or You can use your own custom script but make sure the syntax is same.
 
 ---
+###Explanation of Changes from Component 010/1 Design
+
+During the implementation of this assignment, I made a small number of changes to the original class names and method structures that were proposed in the design document for component 010/1. These changes were necessary to ensure that the final Java application followed best coding practices, improved clarity, and worked effectively in a console-based environment.
+The reasons for these deviations are listed below:
+
+1. 	Improved Naming Consistency:
+Some class and method names from the original diagrams were adjusted to follow standard Java naming conventions. This includes using CamelCase for class names and lowerCamelCase for method names. These changes improve readability and align the project with common OOP standards.
+
+2. 	Simplification for Console-Based Implementation:
+The original design included elements that were more suitable for a GUI or a more complex system. Since this assignment requires a console-only application, certain names and functions were simplified to better match the required interaction style.
+
+3. 	Avoiding Redundancy and Improving Structure:
+A few methods and attributes were renamed or reorganised to avoid duplication and to make the code more modular. These adjustments help maintain clean structure and make the program easier to test and understand.
+
+4. 	Practical Adjustments During Development:
+While implementing the system, some class responsibilities became clearer. Minor changes were made to ensure each class had a single, well-defined purpose. These changes improve overall cohesion and maintainability
 
 ## ✅ Conclusion
 

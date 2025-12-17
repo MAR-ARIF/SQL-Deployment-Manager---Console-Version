@@ -1,4 +1,6 @@
 Production | Predefined Script |✅APPROVED BY DBA JHON | 29/11/2025--12:15:31 | BY Arif | DEV
 Development | Custom Script |✅APPROVED BY DBA JHON | 29/11/2025--12:15:36 | BY Arif | DEV
 Development | Predefined Script |❌DECLINED BY DBA JHON | 29/11/2025--12:16:19 | BY Arif | DEV
-Development | Predefined Script |⏳AWAITING APPROVAL | 03/12/2025--11:09:33 | BY Arif | DEV
+Development | Predefined Script |✅APPROVED BY DBA JHON | 03/12/2025--11:09:33 | BY Arif | DEV
+Development | Custom Script |✅APPROVED BY DBA JHON | 17/12/2025--19:02:35 | BY Arif | DEV
+Production | Predefined Script |⏳AWAITING APPROVAL | 17/12/2025--19:03:23 | BY Arif | DEV
